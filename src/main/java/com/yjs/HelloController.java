@@ -15,7 +15,7 @@ public class HelloController {
     private String cupSize;
 
     @Autowired
-    private Girl girl;
+    private GirlProperties girl;
 
     @RequestMapping(value = {"/say", "/hi"}, method = RequestMethod.GET)
     public String say() {
