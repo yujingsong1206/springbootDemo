@@ -18,3 +18,10 @@ cupSize : B  #自定义变量，使用方法在@RestController类里使用<br/>@
 @GetMapping &nbsp;&nbsp;  组合注解，相当于@RequestMapping(value = "/XXX", method = RequestMethod.GET)<br/>
 @PostMapping &nbsp;&nbsp;  同上，就是get变成post
 
+3.接口<br/>
+请求类型 &nbsp;&nbsp; 请求路径 &nbsp;&nbsp;&nbsp;&nbsp; 功能 <br/>
+&nbsp; GET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /girls &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 获取女生列表<br/>
+&nbsp; POST &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /girls &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 创建一个女生<br/>
+&nbsp; GET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /girls/id &nbsp;&nbsp; 获取女生列表<br/>
+&nbsp; PUT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /girls/id &nbsp;&nbsp; 获取女生列表<br/>
+&nbsp; DELETE &nbsp;&nbsp; /girls/id &nbsp;&nbsp; 获取女生列表<br/>
