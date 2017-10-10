@@ -1,0 +1,9 @@
+server:
+  port: 8081                                        #tomcat启动端口 默认8080
+  context-path: /springbootdemo                    #启动项目名字（前缀）
+
+#自定义变量
+cupSize : B
+girl :
+  cupSize : F
+  age : 25
