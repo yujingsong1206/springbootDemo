@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by song-pc on 2017/10/10.
  */
 @RestController
+@RequestMapping("/hello")
 public class HelloController {
 
     @Value("${cupSize}")
@@ -18,7 +19,7 @@ public class HelloController {
     @Autowired
     private Girl girl;
 
-    @RequestMapping(value = {"/hello", "/hi"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/say", "/hi"}, method = RequestMethod.GET)
     public String say() {
         //return cupSize;
         return "大小：" + girl.getCupSize() + " 年龄：" + girl.getAge();
