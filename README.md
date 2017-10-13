@@ -25,5 +25,3 @@ cupSize : B  #自定义变量，使用方法在@RestController类里使用<br/>@
 &nbsp; GET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /girls/id &nbsp;&nbsp; 获取女生列表<br/>
 &nbsp; PUT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /girls/id &nbsp;&nbsp; 获取女生列表<br/>
 &nbsp; DELETE &nbsp;&nbsp; /girls/id &nbsp;&nbsp; 获取女生列表<br/>
-
-说明：该项目只是演示一些springboot的简单功能，并没严格按照实际项目规则创建（包、bean、service、dao等）

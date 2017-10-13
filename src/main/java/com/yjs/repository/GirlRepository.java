@@ -1,5 +1,6 @@
-package com.yjs;
+package com.yjs.repository;
 
+import com.yjs.domain.Girl;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

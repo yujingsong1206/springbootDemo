@@ -1,4 +1,4 @@
-package com.yjs;
+package com.yjs.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

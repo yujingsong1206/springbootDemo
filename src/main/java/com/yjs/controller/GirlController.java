@@ -1,5 +1,8 @@
-package com.yjs;
+package com.yjs.controller;
 
+import com.yjs.domain.Girl;
+import com.yjs.repository.GirlRepository;
+import com.yjs.service.GirlService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
