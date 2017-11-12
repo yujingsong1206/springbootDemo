@@ -1,8 +1,10 @@
 package com.yjs.controller;
 
 import com.yjs.domain.Girl;
+import com.yjs.domain.Result;
 import com.yjs.repository.GirlRepository;
 import com.yjs.service.GirlService;
+import com.yjs.utils.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -36,14 +38,14 @@ public class GirlController {
      * @return
      */
     @PostMapping(value = "/girls")
-    public Girl girlAdd(@Valid Girl girl, BindingResult bindingResult) {
+    public Result<Girl> girlAdd(@Valid Girl girl, BindingResult bindingResult) {
         if(bindingResult.hasErrors()) {
-            System.out.println(bindingResult.getFieldError().getDefaultMessage());
-            return null;
+            return ResultUtil.error(bindingResult.getFieldError().getDefaultMessage());
         }
 //        girl.setCupSize(girl.getCupSize());
 //        girl.setAge(girl.getAge());
-        return girlRepository.save(girl);
+
+        return ResultUtil.success(girlRepository.save(girl), "成功");
     }
 
     /**
