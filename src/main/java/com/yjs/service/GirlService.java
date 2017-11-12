@@ -27,4 +27,8 @@ public class GirlService {
         girl2.setAge(20);
         girlRepository.save(girl2);
     }
+
+    public Girl findOne(Integer id) {
+        return girlRepository.findOne(id);
+    }
 }
